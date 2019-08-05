@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
   mode: 'development',
@@ -8,14 +8,23 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.ts', '.json']
-  },  
-  devtool: "inline-source-map",
+  },
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
         test: /\.ts$/,
         use: 'ts-loader'
+      },
+      {
+        test: /\.ts$/,
+        exclude: /node_modules|\.spec\.ts$/,
+        enforce: 'post',
+        use: {
+          loader: 'istanbul-instrumenter-loader',
+          options: { esModules: true }
+        }
       }
-    ],
+    ]
   }
 };

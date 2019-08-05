@@ -18,6 +18,7 @@
     "@types/jasmine-jquery": "^1.5.33",
     "@types/jquery": "^3.3.30",
     "@types/node": "^12.6.9",
+    "istanbul-instrumenter-loader": "^3.0.1",
     "jasmine-jquery": "^2.1.1",
     "karma": "^4.2.0",
     "karma-chrome-launcher": "^3.0.0",
