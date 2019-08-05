@@ -1,0 +1,35 @@
+{
+  "name": "tswebpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "test": "karma start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.3.16",
+    "@types/jasmine-jquery": "^1.5.33",
+    "@types/jquery": "^3.3.30",
+    "@types/node": "^12.6.9",
+    "jasmine-jquery": "^2.1.1",
+    "karma": "^4.2.0",
+    "karma-chrome-launcher": "^3.0.0",
+    "karma-coverage-istanbul-reporter": "^2.1.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-jasmine-html-reporter": "^1.4.2",
+    "karma-jasmine-jquery": "^0.1.1",
+    "karma-typescript": "^4.1.1",
+    "karma-webpack": "^4.0.2",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  }
+}
